@@ -1,12 +1,8 @@
 [user]
-  name = 22mahmoud
-  email = hello@mahmoudashraf.dev
-  signingKey = Mahmoud Ashraf <hello@mahmoudashraf.dev>
+  name = Mahmoud Ashraf
+  email = mahmoud.ashraf@roadtripnation.org
 [commit]
-  gpgsign = true
   verbose = true
-[tag]
-  gpgSign = true
 [color]
   ui = true
 [core]
@@ -32,8 +28,6 @@
   syntax-theme = "gruvbox"
 [pull]
   rebase = true
-[gpg]
-  program = gpg
 [init]
   defaultBranch = main
 [alias]

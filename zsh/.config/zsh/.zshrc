@@ -1,5 +1,7 @@
 fpath=($ZDOTDIR/plugins $fpath)
 
+source "$ZDOTDIR/.zshenv"
+
 # navigation
 setopt AUTO_CD              # Go to folder path without using cd.
 setopt AUTO_PUSHD           # Push the old directory onto the stack on cd.
@@ -42,6 +44,7 @@ eval "$(starship init zsh)"
 # fzf colorscheme
 source "$ZDOTDIR/base16-fzf/bash/base16-materia.config"
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS --color=bg:-1" # background match terminal "Xresources" background
+
 # source plugins
 source "$ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 source "$ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
@@ -54,4 +57,4 @@ source "$ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
 # zoxide - fast navigation
 eval "$(zoxide init zsh)"
 
-colorscript -r | tail -n +2
+# colorscript -r | tail -n +2
