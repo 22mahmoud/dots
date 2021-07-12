@@ -58,3 +58,5 @@ source "$ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
 eval "$(zoxide init zsh)"
 
 # colorscript -r | tail -n +2
+export PATH="/usr/local/opt/mongodb-community@4.2/bin:$PATH"
+export PATH="/usr/local/opt/mongodb-database-tools/bin/:$PATH"
